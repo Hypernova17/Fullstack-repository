@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant Browser
+    participant Server
+
+    Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa\nContent-Type: application/json
+
+    Server-->>Browser: 201 Created\nContent-Type: application/json
+    Note left of Server: La nota se crea correctamente Se devuelve una respuesta con código 201

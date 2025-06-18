@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant Navegador
+    participant Servidor
+
+    Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    Servidor-->>Navegador: 200 OK (HTML)
+
+    Navegador->>Servidor: GET /main.css
+    Servidor-->>Navegador: 200 OK (CSS)
+
+    Navegador->>Servidor: GET /spa.js
+    Servidor-->>Navegador: 200 OK (JavaScript)
+
+    Navegador->>Servidor: GET /data.json
+    Servidor-->>Navegador: 200 OK (JSON)
+
